@@ -1,0 +1,18 @@
+1. Partitioning Problem:  Given a set A of n elements, partition it into two subsets of equal size, i.e., A is partitioned into A1 and A2 of equal size such that |Sum(A1) - Sum(A2)| value is as minimum as possible. As we know that, 0 is the optimal value and no further improvement is possible. Assume n is always an even number.
+
+Tasks to do:
+- Solution search space size analysis: Analyze the solution search space size (i.e., the number of different solutions possible for this problem)
+
+- Propose 3 different logics/algorithms and analyze the associated complexity in terms of Asymptotic Notations (Big O / Theta)One has to read the input files attached as follows (s34, u10, u50, u100, u500, u1000), in which the first line represents the number of elements (i.e., n) followed by the n integers.
+
+- Submit in GCR (Google Class Room), 3 different programs PP1, PP2, PP3 along with their complexities, and also submit |Sum(A1) - Sum(A2)| value for every input file according to 3 different logics/algorithms.
+
+- One has to try for getting the |Sum(A1) - Sum(A2)| value as minimum as possible even at higher complexities.
+
+2. Identify the Big-O Notations for the 6 mysterious functions in the following image attached (i.e., Myst_Fun). Submit all of them in GCR in a text file (e.g. Ex 7: O(log n)).
+
+3. Given an integer n, Write programs to find (i) prime factors of n (ii) prime factorization of n (iii) all factors (iv) sum of all factors. Submit in GCR, 4 different programs PF1, PF2, PF3, PF4 along with their complexities in terms of Asymptotic Notations (Big O / Theta)
+
+Note: Anyone from the group can submit the program
+
+Note: Students have to write the pseudo code first in their notebooks and implement it after that.

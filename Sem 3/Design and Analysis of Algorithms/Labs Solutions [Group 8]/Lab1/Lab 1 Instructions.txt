@@ -1,0 +1,14 @@
+1. Compute the factorial of a given number 'N' (2 different logics)
+
+2. Compute the GCD of given multiple numbers (2 different logics)
+
+Students have to write the pseudo code first in their notebooks and implement it after that.
+A student has to submit 4 programs namely as follows by the end of the lab.
+
+1. fact1.c
+2. fact2.c
+3. gcd1.c
+4. gcd2.c
+
+Thanks and regards,
+Dr. Venkatesh
