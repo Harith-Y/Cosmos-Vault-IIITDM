@@ -1,0 +1,18 @@
+Min 1 member
+Max 5 members
+Languages that can be used: C++ or Java
+
+Do's and Don'ts:
+	1)All OO Concepts Incorporated (Encapsulation, abstraction , Operator Overloading,inheritance,  Polymorphism, Exception handling, templates)
+	2) NO TWO TEAMS SHOULD WORK ON SAME TOPIC!!!
+	3) Python Not Allowed!!
+
+Deadline 1: Topic, Team Composition within Friday(25-10-2024) - Google Form attached with this post
+
+Deadline 2:Nov 8th First Version of Project(Till Operator Overloading)
+
+Submission must have
+	1) Source Code
+	2) Documentation File
+		To Explain specifications, 
+	3) Output Screenshots
