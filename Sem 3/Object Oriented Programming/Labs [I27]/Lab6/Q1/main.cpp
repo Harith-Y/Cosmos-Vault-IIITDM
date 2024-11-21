@@ -1,7 +1,4 @@
-#include <iostream>
 #include "Armadams.hpp"
-
-using namespace std;
 
 int main() {
     int choice = 0;

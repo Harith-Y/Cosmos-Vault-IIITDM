@@ -1,15 +1,18 @@
-#include <iostream>
 #include "Point.hpp"
 
+
 class Circle {
-	private: Point center;
-	private: double radius;
+	private: 
+		Point center;
+		double radius;
 
-	public: Circle(Point center = Point(), double radius = 1.0) : center(center), radius(radius) {}
+	public: 
+		Circle(Point center = Point(), double radius = 1.0) : center(center), radius(radius) {}
+		~Circle() {}
 
-    public: double getRadius() const;
-    public: Point getCenter() const;
-    public: double area() const;
-	public: void display() const;
+    	double getRadius() const;
+    	Point getCenter() const;
+    	double area() const;
+		void display() const;
 };
 

@@ -3,8 +3,9 @@
 MyString :: MyString(const char *s) {
     if (s == nullptr) {
         cerr << "Error: Null pointer passed to MyString constructor." << endl;
-        exit(1);
+        exit(EXIT_FAILURE);
     }
+
     str = new char[strLen(s) + 1];  
     strCpy(str, const_cast<char*>(s)); 
 }

@@ -1,13 +1,19 @@
 #include <iostream>
+
+#define _USE_MATH_DEFINES
 #include <cmath>
 
+using namespace std;
+
 class Point {
-	private: double x, y;
+	private: 
+        double x, y;
 
-	public: Point(double x = 0.0, double y = 0.0) : x(x), y(y) {}
+	public: 
+        Point(double x = 0.0, double y = 0.0) : x(x), y(y) {}
+        ~Point() {}
 
-    public: double getX() const;
-    public: double getY() const;
-    public : void display() const;
+        double getX() const;
+        double getY() const;
+        void display() const;
 };
-

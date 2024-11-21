@@ -5,25 +5,26 @@ using namespace std;
 #define MAX_SIZE 10
 
 class Matrix {
-    private: int rows;
-    private: int cols;
-    private: int data[MAX_SIZE][MAX_SIZE];
+    private:
+        int rows;
+        int cols;
+        int data[MAX_SIZE][MAX_SIZE];
 
+    public:
+        Matrix();
+        ~Matrix();
 
-    public: Matrix();
-    public: ~Matrix();
+        Matrix(int, int);
 
-    public: Matrix(int, int);
+        Matrix(const Matrix&);
 
-    public: Matrix(const Matrix&);
+        Matrix & operator = (const Matrix&);
+        Matrix operator + (const Matrix&);
+        Matrix operator - (const Matrix&);
+        Matrix operator * (const Matrix&);
 
-    public: Matrix& operator=(const Matrix&);
-    public: Matrix operator+(const Matrix&);
-    public: Matrix operator-(const Matrix&);
-    public: Matrix operator*(const Matrix&);
+        int* operator[] (int i);
 
-    public: int* operator[](int i);
-
-    public: friend ostream& operator<<(ostream& out, const Matrix& mat);
-    public: friend istream& operator>>(istream& in, Matrix& mat);
+        friend ostream & operator << (ostream& , const Matrix& );
+        friend istream & operator >> (istream& , Matrix& );
 };

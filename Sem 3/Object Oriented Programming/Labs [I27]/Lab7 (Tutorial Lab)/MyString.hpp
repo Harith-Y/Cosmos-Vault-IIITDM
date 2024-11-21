@@ -5,18 +5,19 @@ using namespace std;
 class MyString {
     private: char *str;
 
-    public: MyString(const char *);
-    public: ~MyString();
-    public: char* getString() const;
-    public: void strCpy(char*, char*);
-    public: void strNCpy(char*, char*, int);
-    public: void strCat (const char* str2);
-    public: int strLen(const char* str);
-    public: void strCmp(const char* str1, const char*);
-    public: void strNCmp(const char*, const char*, int);
-    public: void strRev();
-    public: bool checkPalindrome(const char*);
-    public: char* largestCommonSubsequence(const char*, const char*);
+    public:
+        MyString(const char *);
+        ~MyString();
+        char* getString() const;
+        void strCpy(char*, char*);
+        void strNCpy(char*, char*, int);
+        void strCat (const char* );
+        int strLen(const char* );
+        void strCmp(const char* , const char*);
+        void strNCmp(const char*, const char*, int);
+        void strRev();
+        bool checkPalindrome(const char*);
+        char* largestCommonSubsequence(const char*, const char*);
 
-    public: void print();
+        void print();
 };

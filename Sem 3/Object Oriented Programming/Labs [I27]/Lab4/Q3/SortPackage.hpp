@@ -1,11 +1,13 @@
 #include <iostream>
 
-class SortPackage {
-	public: void swap(int&, int&);
-	public: void swap(float&, float&);
-	public: void swap(char&, char&) ;
-	public: void sort(int [], int);
-	public: void sort(float [], int);
-	public: void sort(char [], int);
-};
+using namespace std;
 
+class SortPackage {
+	public:
+		void swap(int&, int&);
+		void swap(float&, float&);
+		void swap(char&, char&) ;
+		void sort(int [], int);
+		void sort(float [], int);
+		void sort(char [], int);
+};

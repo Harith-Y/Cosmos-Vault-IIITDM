@@ -1,6 +1,6 @@
 #include "MyString.hpp"
 
-char* MyString::largestCommonSubsequence(const char* str1, const char* str2) {
+char* MyString :: largestCommonSubsequence(const char* str1, const char* str2) {
     if ((strLen(str1) == 0) || (strLen(str2) == 0)) {
         char* emptyStr = new char[1];
         emptyStr[0] = '\0';

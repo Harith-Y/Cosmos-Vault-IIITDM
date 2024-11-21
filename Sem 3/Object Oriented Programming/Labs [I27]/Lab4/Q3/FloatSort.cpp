@@ -1,7 +1,4 @@
-#include <iostream>
 #include "SortPackage.hpp"
-
-using namespace std;
 
 void SortPackage :: swap(float &a, float &b) {
     float temp = a;

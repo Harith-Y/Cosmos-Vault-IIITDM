@@ -8,5 +8,5 @@ SquarePackage :: SquarePackage(int n, int mat[10][10]) {
 }
 
 SquarePackage :: ~SquarePackage() {
-    // Destructor logic
+    cout << "Destructor called" << endl;
 }

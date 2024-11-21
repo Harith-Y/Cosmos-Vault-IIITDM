@@ -1,7 +1,5 @@
 #include "Point.hpp"
 
-using namespace std;
-
 double Point :: getX() const { 
 	return x; 
 }

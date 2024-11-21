@@ -1,26 +1,26 @@
 #include <iostream>
 #include <cstdlib>
+
 using namespace std;
 
-class IntArray
-{
-    private: int* aptr;
-    private: int size;
+class IntArray {
+    private:
+        int* aptr;
+        int size;
         
-    private: friend ostream & operator << (ostream &o, IntArray &a);
-    private: friend istream & operator >> (istream &o, IntArray &a);
+        friend ostream & operator << (ostream &, IntArray &);
+        friend istream & operator >> (istream &, IntArray &);
 
-    
-    public: IntArray();
-    public: IntArray(int);
-    public: IntArray(IntArray &);
-    public: ~IntArray();
+    public:
+        IntArray();
+        IntArray(int);
+        IntArray(IntArray &);
+        ~IntArray();
 
-    public: const IntArray & operator = (const IntArray &);
-    public: bool operator == (const IntArray &) const;
-    public: bool operator != (const IntArray &) const;
+        const IntArray & operator = (const IntArray &);
+        bool operator == (const IntArray &) const;
+        bool operator != (const IntArray &) const;
 
-    public: int & operator [] (int);
-    public: const int & operator [] (int) const;
-
+        int & operator [] (int);
+        const int & operator [] (int) const;
 };

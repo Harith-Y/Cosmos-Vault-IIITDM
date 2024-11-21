@@ -1,7 +1,5 @@
 #include "Armadams.hpp"
 
-using namespace std;
-
 void ArmadamsPackage :: generateAdamsNumbers(int lower, int upper) {
     cout << "Adam numbers between " << lower << " and " << upper << " are: ";
     bool found = false;
@@ -11,9 +9,9 @@ void ArmadamsPackage :: generateAdamsNumbers(int lower, int upper) {
             found = true;
         }
     }
+
     if (!found)
         cout << "None";
 
     cout << endl;
-
 }

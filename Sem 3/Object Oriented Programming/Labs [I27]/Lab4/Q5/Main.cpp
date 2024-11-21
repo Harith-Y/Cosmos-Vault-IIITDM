@@ -1,7 +1,4 @@
-#include <iostream>
 #include "SquarePackage.hpp"
-
-using namespace std;
 
 int main() {
     int choice;
@@ -14,8 +11,8 @@ int main() {
         cin >> size;
 
         if ((size <= 0) || (size > 10)) {
-            cout << "Invalid size! Please enter a size between 1 and 10." << endl;
-            return 1;
+            cerr << "Invalid size! Please enter a size between 1 and 10." << endl;
+            exit(EXIT_FAILURE);
         }
 
         int matrix[10][10];
@@ -26,20 +23,19 @@ int main() {
 
         SquarePackage square(size, matrix);
 
-        if (square.isMagicSquare()) {
+        if (square.isMagicSquare())
             cout << "The square is a magic square." << endl;
-        } else {
+        else
             cout << "The square is not a magic square." << endl;
-        }
     } 
     else if (choice == 2) {
         int n;
         cout << "Enter the size of the Latin square (up to 100): ";
         cin >> n;
 
-        if (n <= 0 || n > 100) {
-            cout << "Error! Please enter a size between 1 and 100." << endl;
-            return 1;
+        if ((n <= 0) || (n > 100)) {
+            cerr << "Error! Please enter a size between 1 and 100." << endl;
+            exit(EXIT_FAILURE);
         }
 
         int lat[100][100];
@@ -52,7 +48,8 @@ int main() {
 
             cout << endl;
         }
-    } 
+    }
+    
     else 
         cout << "Please enter a valid choice!" << endl;
 

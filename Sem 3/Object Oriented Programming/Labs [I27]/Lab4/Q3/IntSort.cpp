@@ -1,7 +1,4 @@
-#include <iostream>
 #include "SortPackage.hpp"
-
-using namespace std;
 
 void SortPackage :: swap(int &a, int &b) {
     int temp = a;
@@ -18,5 +15,5 @@ void SortPackage :: sort(int arr[], int size) {
     for (int i = 0; i < size; i++)
         cout << arr[i] << " ";
 
-    cout << endl << endl
+    cout << endl << endl;
 }

@@ -1,8 +1,12 @@
 #include <iostream>
 
-class ExampleClass {
-	private: int data;
+using namespace std;
 
-	public : ExampleClass(int);
-	public : ~ExampleClass();
+class ExampleClass {
+	private: 
+		int data;
+
+	public : 
+		ExampleClass(int);
+		~ExampleClass();
 };

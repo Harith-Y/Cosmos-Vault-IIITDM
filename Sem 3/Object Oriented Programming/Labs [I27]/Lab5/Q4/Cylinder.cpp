@@ -1,7 +1,5 @@
 #include "Cylinder.hpp"
 
-using namespace std;
-
 Circle Cylinder :: getBase() const { 
 	return base; 
 }

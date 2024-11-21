@@ -1,25 +1,22 @@
 #include <iostream>
 
+using namespace std;
+
 class ArmadamsPackage {
-    private: int num;
-    private: int lowerBound;
-    private: int upperBound;
+    private: 
+        int num;
+        int lowerBound;
+        int upperBound;
 
-    public: ArmadamsPackage(int val) {
-        num = val;
-    }
+    public:
+        ArmadamsPackage(int num) : num(num) {}
+        ~ArmadamsPackage() { cout << "Destructor called" << endl; }
+    
+        int getNum() const { return num; };
 
-    public: ~ArmadamsPackage(){
-        // Destructor code goes here
-    }
-    public: int getNum() const { 
-        return num; 
-    };
-
-    public: int reverseNumber(int);
-    public: bool isArmstrongNumber(int);
-    public: bool isAdamNumber(int);
-    public: void generateArmstrongNumbers(int, int);
-    public: void generateAdamsNumbers(int, int);
-
+        int reverseNumber(int);
+        bool isArmstrongNumber(int);
+        bool isAdamNumber(int);
+        void generateArmstrongNumbers(int, int);
+        void generateAdamsNumbers(int, int);
 };

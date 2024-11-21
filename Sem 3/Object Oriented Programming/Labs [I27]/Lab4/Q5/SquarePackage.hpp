@@ -1,16 +1,20 @@
 #include <iostream>
 
+using namespace std;
+
 class SquarePackage {
-private: int matrix[10][10];
-private: int size;
+    private: 
+        int matrix[10][10];
+        int size;
 
-private: int rowSum(int row) const;
-private: int colSum(int col) const;
-private: int diagSum(bool mainDiagonal) const;
+        int rowSum(int ) const;
+        int colSum(int ) const;
+        int diagSum(bool) const;
 
-public: SquarePackage(int size, int matrix[10][10]);
-public: ~SquarePackage();
-public: bool isMagicSquare() const;
+    public: 
+        SquarePackage(int , int matrix[10][10]);
+        ~SquarePackage();
+        bool isMagicSquare() const;
 };
 
 void latinSquare(int lat[100][100], int n);

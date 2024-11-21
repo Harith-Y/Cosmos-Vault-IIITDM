@@ -1,7 +1,4 @@
 #include "SquarePackage.hpp"
-#include <iostream>
-
-using namespace std;
 
 void latinSquare(int lat[100][100], int n) {
     for (int i = 0; i < n; i++) {

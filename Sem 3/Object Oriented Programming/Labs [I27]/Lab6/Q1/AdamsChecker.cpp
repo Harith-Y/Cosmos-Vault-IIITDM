@@ -16,4 +16,4 @@ bool ArmadamsPackage :: isAdamNumber(int num) {
     int reversedSquare = reverseNumber(reversedNum * reversedNum);
 
     return (square == reversedSquare);
-}   
+}

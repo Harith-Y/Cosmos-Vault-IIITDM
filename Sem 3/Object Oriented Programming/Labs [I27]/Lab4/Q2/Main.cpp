@@ -1,7 +1,5 @@
 #include "Main.hpp"
 
-using namespace std;
-
 ExampleClass O1(1);
 
 int fun() {

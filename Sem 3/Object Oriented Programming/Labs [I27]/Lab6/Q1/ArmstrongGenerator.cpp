@@ -1,7 +1,5 @@
 #include "Armadams.hpp"
 
-using namespace std;
-
 void ArmadamsPackage :: generateArmstrongNumbers(int lower, int upper) {
     cout << "Armstrong numbers between " << lower << " and " << upper << " are: ";
     bool found = false;

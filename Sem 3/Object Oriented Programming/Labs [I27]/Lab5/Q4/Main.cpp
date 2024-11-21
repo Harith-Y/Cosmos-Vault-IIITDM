@@ -1,7 +1,4 @@
-#include <iostream>
 #include "Cylinder.hpp"
-
-using namespace std;
 
 int main() {
     Point p(1.0, 2.0);
