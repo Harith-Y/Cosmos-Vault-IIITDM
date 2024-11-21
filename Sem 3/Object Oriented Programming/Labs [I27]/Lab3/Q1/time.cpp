@@ -1,9 +1,6 @@
-#include "time.hpp"	
-#include <iostream>
+#include "Time.hpp"	
 
-using namespace std;
-
-TimePackage::TimePackage(int h, int m, int s) {
+TimePackage :: TimePackage(int h, int m, int s) {
     if ((h < 0) || (h > 23)) {
         cerr << "Error: Value of Hours must be from 0 to 23." << endl;
         exit(EXIT_FAILURE);
@@ -22,7 +19,7 @@ TimePackage::TimePackage(int h, int m, int s) {
     seconds = s;
 }
 
-TimePackage::~TimePackage() {
-    // Destructor logic
+TimePackage :: ~TimePackage() {
+    cout << "Destructor called for Time Package." << endl;
 }
 

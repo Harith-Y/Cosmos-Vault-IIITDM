@@ -1,7 +1,5 @@
-#include <iostream>
 #include "numberPackage.hpp"
 
-using namespace std;
 
 typedef int (NumberPackage::*FuncPtr)(int);
 

@@ -1,25 +1,25 @@
 #include <iostream>
+
 using namespace std;
 
-class Matrix
-{
-    private: int rows;
-    private: int cols;
-    private: double** mat;
+class Matrix {
+    private: 
+        int rows;
+        int cols;
+        double** mat;
 
-
-    public: void createMatrix();
-    public: void displayMatrix();
-    public: Matrix transMatrix();
-    public: void freeMatrix();
-    public: double detMatrix();
-    public: Matrix allocateMem(int row, int col);
-    public: Matrix getSubmatrix(int c_row, int c_col);
-    public: Matrix invMatrix();
-    public: Matrix addMatrix(const Matrix &m);
-    public: Matrix subMatrix(const Matrix &m);
-    public: Matrix mulMatrix(const Matrix &m);
-    public: double coFactor(int c_row, int c_col);
+    public:
+        void createMatrix();
+        void displayMatrix();
+        Matrix transMatrix();
+        void freeMatrix();
+        double detMatrix();
+        Matrix allocateMem(int , int );
+        Matrix getSubmatrix(int , int );
+        Matrix invMatrix();
+        Matrix addMatrix(const Matrix &);
+        Matrix subMatrix(const Matrix &);
+        Matrix mulMatrix(const Matrix &);
+        double coFactor(int , int );
         
 };
-

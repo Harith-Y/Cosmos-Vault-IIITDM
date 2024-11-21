@@ -1,12 +1,11 @@
-#include <iostream>
-#include "time.hpp"
+#include "Time.hpp"
+#include <cstring>
 
-using namespace std;
-
-void TimePackage::convertTo12HourFormat() {
+void TimePackage :: convertTo12HourFormat() {
     int hour12 = hours % 12;
     if (hour12 == 0)
     	hour12 = 12;
+
     string period = (hours >= 12) ? "PM" : "AM";
 
     cout << "12-hour format: ";

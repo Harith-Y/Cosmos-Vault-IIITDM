@@ -1,17 +1,14 @@
-#include "matrix.h"
+#include "Matrix.hpp"
 
-Matrix Matrix::subMatrix(const Matrix &m)
-{
-    if ((rows != m.rows) || (cols != m.cols))
-    {
+Matrix Matrix :: subMatrix(const Matrix &m) {
+    if ((rows != m.rows) || (cols != m.cols)) {
         cout << "Matrices must have the same dimensions to subtract!" << endl;
         return allocateMem(0, 0);
     }
 
     Matrix result = allocateMem(rows, cols);
 
-    if (result.mat == NULL)
-    {
+    if (result.mat == NULL) {
         cout << "Memory Allocation failed" << endl;
         return result;
     }

@@ -1,10 +1,7 @@
-#include <iostream>
-#include "time.hpp"
-
-using namespace std;
+#include "Time.hpp"
 
 int main() {
-	int h = 0, m = 0, s = 0 ;
+	int h = 0, m = 0, s = 0;
 	cout << "Enter hours: ";
 	cin >> h;
 	
@@ -16,10 +13,8 @@ int main() {
 	
     TimePackage time(h, m, s);
 
-
     time.printTime();
     time.convertTo12HourFormat();
 
     return 0;
 }
-

@@ -1,5 +1,4 @@
-#include <iostream>
-#include "numberPackage.hpp"
+#include "NumberPackage.hpp"
 
 int NumberPackage :: getVal() {
 	return data;

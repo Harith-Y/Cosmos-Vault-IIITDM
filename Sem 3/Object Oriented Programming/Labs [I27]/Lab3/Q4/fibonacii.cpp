@@ -1,7 +1,4 @@
-#include <iostream>
 #include "numberPackage.hpp"
-
-using namespace std;
 
 int NumberPackage :: fibonacii(int num) {
 	if (num == 0) {
@@ -15,4 +12,3 @@ int NumberPackage :: fibonacii(int num) {
 	else
 		return fibonacii(num - 1) + fibonacii(num - 2);
 }
-

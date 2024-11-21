@@ -1,7 +1,4 @@
-#include <iostream>
 #include "numberPackage.hpp"
-
-using namespace std;
 
 void NumberPackage :: init(int val) {
 	if (val >= 0)

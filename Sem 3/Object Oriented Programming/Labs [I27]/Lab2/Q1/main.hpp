@@ -2,18 +2,16 @@
 
 using namespace std;
 
-class Example
-{
-private:
-    int data;
+class Example {
+    private:
+        int data;
 
-public:
-    void initalize(int val);
-    void increment();
+    public:
+        void initalize(int val);
+        void increment();
 };
 
-void Example::initalize(int val)
-{
+void Example :: initalize(int val) {
     if (val >= 0)
         data = val;
     else

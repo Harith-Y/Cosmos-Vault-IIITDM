@@ -1,8 +1,5 @@
-#include "date.hpp"
-#include <iostream>
-#include <string>
-
-using namespace std;
+#include "Date.hpp"
+#include <cstring>
 
 string getDayOfWeek(int day, int month, int year) {
     if (month < 3) {
@@ -19,7 +16,7 @@ string getDayOfWeek(int day, int month, int year) {
     return days[dayOfWeek];
 }
 
-void DatePackage::displayDayOfWeek() {
+void DatePackage :: displayDayOfWeek() {
     string dayName = getDayOfWeek(day, month, year);
     cout << "Day of the week: " << dayName << endl;
 }

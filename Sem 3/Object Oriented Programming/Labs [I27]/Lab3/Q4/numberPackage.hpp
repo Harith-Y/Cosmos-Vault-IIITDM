@@ -3,13 +3,15 @@
 using namespace std;
 
 class NumberPackage {
-	private: int data;
-	public: void init(int );
-	public: int factorial(int );
-	public: int fibonacii(int );
-	public: int sigma(int );
-	public: int sigma2(int );
-	public: int sigma3(int );
-	public: int getVal();
+	private: 
+		int data;
+	public: 
+		void init(int );
+		int factorial(int );
+		int fibonacii(int );
+		int sigma(int );
+		int sigma2(int );
+		int sigma3(int );
+		int getVal();
 };
 

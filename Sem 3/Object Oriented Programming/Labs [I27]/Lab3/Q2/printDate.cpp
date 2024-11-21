@@ -1,9 +1,6 @@
-#include "date.hpp"
-#include <iostream>
+#include "Date.hpp"
 
-using namespace std;
-
-void DatePackage::printDate() {
+void DatePackage :: printDate() {
     cout << "Date: ";
     cout << (day < 10 ? "0" : "") << day << "/";
     cout << (month < 10 ? "0" : "") << month << "/";

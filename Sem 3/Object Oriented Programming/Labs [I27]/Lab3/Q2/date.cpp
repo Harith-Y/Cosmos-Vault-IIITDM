@@ -1,9 +1,6 @@
-#include "date.hpp"
-#include <iostream>
+#include "Date.hpp"
 
-using namespace std;
-
-DatePackage::DatePackage(int d, int m, int y) {
+DatePackage :: DatePackage(int d, int m, int y) {
     if ((d < 1) || (d > 31)) {
         cerr << "Error: Day must be from 1 to 31." << endl;
         exit(EXIT_FAILURE);
@@ -22,6 +19,6 @@ DatePackage::DatePackage(int d, int m, int y) {
     year = y;
 }
 
-DatePackage::~DatePackage() {
-
+DatePackage :: ~DatePackage() {
+    cout << "Destructor called for Date Package" << endl;
 }

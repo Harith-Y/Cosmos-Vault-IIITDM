@@ -1,7 +1,4 @@
-#include <iostream>
-#include "numberPackage.hpp"
-
-using namespace std;
+#include "NumberPackage.hpp"
 
 int NumberPackage :: sigma3(int num) {
 	if (num < 0) {
