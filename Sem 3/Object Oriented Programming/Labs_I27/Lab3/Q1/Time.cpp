@@ -22,4 +22,3 @@ TimePackage :: TimePackage(int h, int m, int s) {
 TimePackage :: ~TimePackage() {
     cout << "Destructor called for Time Package." << endl;
 }
-

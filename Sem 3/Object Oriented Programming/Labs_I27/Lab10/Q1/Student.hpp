@@ -7,10 +7,9 @@ class Student {
         char * fname;
         char * lname;
 
-        friend ostream & operator << (ostream &, const Student &);
-        
+        friend ostream& operator << (ostream& , const Student& );
+
     public : 
         Student(char * = " ", char * = " ");
-
         ~Student();
 };

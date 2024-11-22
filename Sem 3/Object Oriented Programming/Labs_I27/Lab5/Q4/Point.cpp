@@ -11,4 +11,3 @@ double Point :: getY() const {
 void Point :: display() const {
     cout << "Point(" << x << ", " << y << ")" << endl;
 }
-

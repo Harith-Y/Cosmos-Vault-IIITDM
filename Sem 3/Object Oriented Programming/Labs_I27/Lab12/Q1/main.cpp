@@ -8,8 +8,8 @@ int main() {
     shapes[2] = new Cylinder(1, 2, 3, 4, 5);
 
     for (int i = 0; i < 3; ++i) {
-        shapes[i]->printShapeName();
-        shapes[i]->printShapeDetails();
+        shapes[i] -> printShapeName();
+        shapes[i] -> printShapeDetails();
         
         cout << "Area: " << shapes[i] -> area() << endl;
         cout << "Volume: " << shapes[i] -> volume() << endl << endl;

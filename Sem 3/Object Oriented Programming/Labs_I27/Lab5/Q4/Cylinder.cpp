@@ -17,4 +17,3 @@ void Cylinder :: display() const {
     base.display();
     cout << "and height " << height << endl;
 }
-

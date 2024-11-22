@@ -26,7 +26,7 @@ Student :: Student(char* first, char* last) {
 }
 
 
-ostream & operator << (ostream &o, const Student &stud) {
+ostream& operator << (ostream& o, const Student& stud) {
     o << "First Name is\t" << stud.fname << endl << "Last Name is\t" << stud.lname << endl;
     return o;
 }

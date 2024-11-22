@@ -18,8 +18,8 @@ class Cylinder : public Circle {
         double area() const override;
         double volume() const override;
 
-        friend ostream & operator <<(ostream &, const Cylinder &);
-        friend istream & operator >>(istream &, Cylinder &);
+        friend ostream& operator << (ostream& , const Cylinder& );
+        friend istream& operator >> (istream& , Cylinder& );
 
     private:
         void calcCSA();

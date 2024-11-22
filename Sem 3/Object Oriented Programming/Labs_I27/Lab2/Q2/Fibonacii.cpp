@@ -12,4 +12,3 @@ int NumberPackage :: fibonacii(int num) {
 	else
 		return fibonacii(num - 1) + fibonacii(num - 2);
 }
-

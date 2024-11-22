@@ -13,8 +13,8 @@ class Cylinder : protected Circle {
         void calcFSA();
         void calcVolume();
 
-        friend ostream& operator << (ostream&, const Cylinder&);
-        friend istream& operator >> (istream&, Cylinder&);
+        friend ostream& operator << (ostream& , const Cylinder& );
+        friend istream& operator >> (istream& , Cylinder& );
 
     public:
         Cylinder(double = 0, double = 0, double = 0, double = 0, double = 0);

@@ -2,22 +2,22 @@
 #include "Rectangle.hpp"
 
 class Pyramid : public Triangle, public Rectangle {
-public:
-    void printShapeName() const override {
-        cout << "Shape: Pyramid" << endl;
-    }
+    public:
+        void printShapeName() const override {
+            cout << "Shape: Pyramid" << endl;
+        }
 
-    double area() const override {
-        return baseArea;
-    }
-    
-    Pyramid(double baseArea, double height);
-    double volume() const override;
-    void printShapeDetails() const override;
+        double area() const override {
+            return baseArea;
+        }
+        
+        Pyramid(double baseArea, double height);
+        double volume() const override;
+        void printShapeDetails() const override;
 
-private:
-    double baseArea;
-    double height;
+    private:
+        double baseArea;
+        double height;
 };
 
 

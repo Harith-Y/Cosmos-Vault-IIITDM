@@ -1,7 +1,6 @@
 #include "Main.hpp"
 
-int main()
-{
+int main() {
     Example O1;
     return 0;
 }

@@ -11,7 +11,7 @@ Graduate :: Graduate(char *fname, char *lname, char *degreeParam) : Student(fnam
         degree[i] = degreeParam[i];
 }
 
-ostream & operator << (ostream &o, const Graduate &grad) {
+ostream& operator << (ostream& o, const Graduate& grad) {
     o << "First Name is\t" << static_cast<const Student&>(grad) << endl << "Degree is\t" << grad.degree << endl;
     return o;
 }

@@ -18,19 +18,18 @@ class Matrix {
 
         Matrix(const Matrix&);
 
-        Matrix& operator=(const Matrix&);
-        Matrix operator+(const Matrix&);
-        Matrix operator-(const Matrix&);
-        Matrix operator *(const Matrix&);
+        Matrix& operator = (const Matrix&);
+        Matrix operator + (const Matrix&);
+        Matrix operator - (const Matrix&);
+        Matrix operator * (const Matrix&);
 
-        int* operator[] (int i);
+        int* operator [] (int i);
 
-        friend ostream& operator<<(ostream& out, const Matrix& mat);
-        friend istream& operator>>(istream& in, Matrix& mat);
+        friend ostream& operator << (ostream& out, const Matrix& mat);
+        friend istream& operator >> (istream& in, Matrix& mat);
 
-        Matrix& operator++(); // Prefix increment: ++A
-        Matrix operator++(int); // Postfix increment: A++
-        Matrix& operator--(); // Prefix decrement: --A
-        Matrix operator--(int); // Postfix decrement: A--
-
+        Matrix& operator ++ (); // Prefix increment: ++A
+        Matrix operator ++ (int); // Postfix increment: A++
+        Matrix& operator -- (); // Prefix decrement: --A
+        Matrix operator -- (int); // Postfix decrement: A--
 };

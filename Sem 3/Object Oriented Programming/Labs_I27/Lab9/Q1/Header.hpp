@@ -16,6 +16,6 @@ class Example {
         void print();
 
         Example operator ++ (int);
-        Example & operator ++ (); 
-        Example & operator = (const Example&);     
+        Example& operator ++ (); 
+        Example& operator = (const Example&);     
 };

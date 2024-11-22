@@ -13,6 +13,6 @@ class Point : public Shape {
         double area() const override { return 0; } // Points have no area
         double volume() const override { return 0; } // Points have no volume
 
-        friend ostream & operator <<(ostream &, const Point &);
-        friend istream & operator >>(istream &, Point &);
+        friend ostream& operator << (ostream& , const Point& );
+        friend istream& operator >> (istream& , Point& );
 };

@@ -33,4 +33,3 @@ int function() {
 	cout << "AUTO VARIABLE FIVE(5) HAS BEEN DESTRUCTED" << endl;
 	return 0;
 }
-

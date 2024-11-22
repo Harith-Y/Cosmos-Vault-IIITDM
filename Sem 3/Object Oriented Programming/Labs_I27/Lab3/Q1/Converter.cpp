@@ -14,4 +14,3 @@ void TimePackage :: convertTo12HourFormat() {
     cout << (seconds < 10 ? "0" : "") << seconds << " ";
     cout << period << endl;
 }
-

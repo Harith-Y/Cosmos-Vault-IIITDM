@@ -29,4 +29,3 @@ void swap (int *no1, int *no2) {
 	cout << endl << "IN FUNCTION: Numbers after swapping are:" << endl
 		 << "Number 1: " << *no1 << endl << "Number 2: " << *no2 << endl;
 }
-

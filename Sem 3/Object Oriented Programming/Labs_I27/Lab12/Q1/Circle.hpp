@@ -13,8 +13,8 @@ class Circle : public Point {
         double area() const override;
         double volume() const override { return 0; } // Circles have no volume
 
-        friend ostream & operator <<(ostream &, const Circle &);
-        friend istream & operator >>(istream &, Circle &);
+        friend ostream& operator << (ostream& , const Circle& );
+        friend istream& operator >> (istream& , Circle& );
 
     private:
         void calcArea();

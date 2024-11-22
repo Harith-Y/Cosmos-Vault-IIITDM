@@ -23,8 +23,7 @@ double Matrix :: detMatrix() {
 
             sign *= -1;
         }
-
+        
         return det;
-    }
-    
+    }   
 }

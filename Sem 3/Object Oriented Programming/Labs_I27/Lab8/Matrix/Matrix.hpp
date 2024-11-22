@@ -11,7 +11,7 @@ class Matrix {
         int data[MAX_SIZE][MAX_SIZE];
 
     public:
-        Matrix();
+        Matrix() : rows(0), cols(0) {}
         ~Matrix();
 
         Matrix(int, int);

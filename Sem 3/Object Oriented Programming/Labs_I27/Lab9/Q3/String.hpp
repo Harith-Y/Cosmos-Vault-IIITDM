@@ -30,6 +30,6 @@ class String {
         String lpad(int) const;
         String rpad(int) const;
 
-        friend ostream & operator << (ostream&, const String&);
-        friend istream & operator >> (istream&, String&);
+        friend ostream& operator << (ostream&, const String&);
+        friend istream& operator >> (istream&, String&);
 };

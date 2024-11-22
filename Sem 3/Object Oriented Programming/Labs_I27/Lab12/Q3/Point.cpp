@@ -14,12 +14,12 @@ void Point :: printShapeName() const {
     cout << "Shape: Point" << endl;
 }
 
-istream & operator >>(istream &i, Point &p) {
+istream& operator >> (istream& i, Point& p) {
     i >> p.x >> p.y >> p.z;
     return i;
 }
 
-ostream & operator <<(ostream &o, const Point &p) {
+ostream& operator << (ostream& o, const Point& p) {
     o << "Point: (" << p.x << ", " << p.y << ", " << p.z << ")" << endl;
     return o;
 }

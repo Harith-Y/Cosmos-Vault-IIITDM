@@ -9,4 +9,3 @@ int NumberPackage :: sigma3(int num) {
 	else
 		return (num * num * (num + 1) * (num + 1)) / 4;
 }
-

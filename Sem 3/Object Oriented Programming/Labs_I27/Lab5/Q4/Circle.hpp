@@ -1,6 +1,5 @@
 #include "Point.hpp"
 
-
 class Circle {
 	private: 
 		Point center;
@@ -15,4 +14,3 @@ class Circle {
     	double area() const;
 		void display() const;
 };
-

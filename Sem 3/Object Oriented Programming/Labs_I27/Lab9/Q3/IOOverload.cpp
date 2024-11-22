@@ -1,13 +1,13 @@
 #include "String.hpp"
 
-ostream & operator << (ostream& o, const String& s) {
+ostream& operator << (ostream& o, const String& s) {
     if (s.str != nullptr)
         o << s.str;
 
     return o;
 }
 
-istream & operator >> (istream& in, String& s) {
+istream& operator >> (istream& in, String& s) {
     char temp[1000];
     in >> temp;
     s.length = s.calculateLength(temp);

@@ -1,6 +1,6 @@
 #include "IntArray.hpp"
 
-const IntArray & IntArray :: operator = (const IntArray &right) {
+const IntArray& IntArray :: operator = (const IntArray &right) {
     if (&right != this) {
         if (size != right.size) {
             delete [] aptr;

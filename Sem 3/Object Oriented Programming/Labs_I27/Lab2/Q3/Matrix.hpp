@@ -20,6 +20,5 @@ class Matrix {
         Matrix addMatrix(const Matrix &);
         Matrix subMatrix(const Matrix &);
         Matrix mulMatrix(const Matrix &);
-        double coFactor(int , int );
-        
+        double coFactor(int , int );      
 };

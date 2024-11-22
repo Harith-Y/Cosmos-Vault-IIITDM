@@ -49,7 +49,7 @@ Matrix Matrix :: operator * (const Matrix& mat) {
 
 
 
-ostream & operator << (ostream& o, const Matrix& mat) {
+ostream& operator << (ostream& o, const Matrix& mat) {
     for (int i = 0; i < mat.rows; i++) {
         for (int j = 0; j < mat.cols; j++) 
             o << mat.data[i][j] << " ";
@@ -60,7 +60,7 @@ ostream & operator << (ostream& o, const Matrix& mat) {
     return o;
 }
 
-istream & operator >> (istream& in, Matrix& mat) {
+istream& operator >> (istream& in, Matrix& mat) {
     cout << "Enter number of rows and columns: ";
     in >> mat.rows >> mat.cols;
     if ((mat.rows > MAX_SIZE) || (mat.cols > MAX_SIZE)) {

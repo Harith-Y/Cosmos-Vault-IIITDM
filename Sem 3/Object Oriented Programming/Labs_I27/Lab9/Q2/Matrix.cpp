@@ -14,7 +14,7 @@ Matrix& Matrix :: operator = (const Matrix& mat) {
     return *this;
 }
 
-int* Matrix :: operator[](int i) {
+int* Matrix :: operator [] (int i) {
     if ((i >= rows) || (i < 0)) {
         cout << "Index out of bounds!" << endl;
         return nullptr;

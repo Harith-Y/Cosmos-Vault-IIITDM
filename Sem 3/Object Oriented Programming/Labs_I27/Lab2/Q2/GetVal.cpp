@@ -3,4 +3,3 @@
 int NumberPackage :: getVal() {
 	return data;
 }
-

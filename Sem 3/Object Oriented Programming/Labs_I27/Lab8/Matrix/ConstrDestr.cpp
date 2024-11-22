@@ -1,16 +1,5 @@
 #include "Matrix.hpp"
 
-Matrix :: Matrix() : rows(0), cols(0) {}
-
-// Matrix :: Matrix(int r, int c) : rows(0), cols(0) {
-//     if (r > MAX_SIZE || c > MAX_SIZE) {
-//         cout << "Matrix dimensions exceed MAX_SIZE." << endl;
-//     } else {
-//         rows = r;
-//         cols = c;
-//     }
-// }
-
 Matrix :: Matrix(int r, int c) : rows(r), cols(c) {
     if ((r > MAX_SIZE) || (c > MAX_SIZE)) {
         cout << "Matrix dimensions exceed MAX_SIZE." << endl;
