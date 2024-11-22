@@ -2,17 +2,17 @@
 
 int mystrlen(char *str) {
     int i = 0;
-    while (str[i] != '\0') {
+    while (str[i] != '\0')
         i++;
-    }
+
     return i;
 }
 
 char* mystrcpy(char* dest, char* src) {
     char* start = dest;
-    while (*src != '\0') {
+    while (*src != '\0')
         *dest++ = *src++;
-    }
+
     *dest = '\0';
     return start;
 }
@@ -36,4 +36,3 @@ Student :: ~Student() {
     delete[] fname;
     delete[] lname;
 }
-

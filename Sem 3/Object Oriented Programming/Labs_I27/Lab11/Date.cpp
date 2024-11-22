@@ -1,4 +1,4 @@
-#include "date.hpp"
+#include "Date.hpp"
 
 DatePackage :: DatePackage(int d, int m, int y) {
     if ((d < 1) || (d > 31)) {
@@ -20,8 +20,7 @@ DatePackage :: DatePackage(int d, int m, int y) {
 }
 
 DatePackage :: ~DatePackage() {
-    // Destructor logic
-    cout << "Destructor called" << endl;
+    cout << "Destructor called for Date Object" << endl;
 }
 
 void DatePackage :: printDate() {
@@ -44,7 +43,7 @@ int DatePackage :: daysInMonth(int m, int y) {
     return daysInMonth[m - 1];
 }
 
-DatePackage& DatePackage :: operator++() {
+DatePackage& DatePackage :: operator ++ () {
     day++;
     if (day > daysInMonth(month, year)) {
         day = 1;
@@ -59,14 +58,14 @@ DatePackage& DatePackage :: operator++() {
     return *this;
 }
 
-DatePackage DatePackage :: operator++(int) {
+DatePackage DatePackage :: operator ++ (int) {
     DatePackage temp = *this;
     ++(*this);
 
     return temp;
 }
 
-DatePackage& DatePackage :: operator+=(int days) {
+DatePackage& DatePackage :: operator += (int days) {
     while (days-- > 0)
         ++(*this);
 

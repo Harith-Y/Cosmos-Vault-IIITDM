@@ -1,7 +1,6 @@
 #include "Circle.hpp"
 
-Circle :: Circle(double Px, double Py, double Pz, double rad) : Point(Px, Py, Pz) {
-    radius = rad;
+Circle :: Circle(double Px, double Py, double Pz, double rad) : Point(Px, Py, Pz), radius(rad) {
     calcArea();
 }
 
@@ -10,13 +9,13 @@ Circle :: ~Circle() {
 }
 
 
-istream & operator >>(istream &i, Circle &c) {
+istream& operator >> (istream& i, Circle& c) {
     i >> c.x >> c.y >> c.z >> c.radius;
     c.calcArea();
     return i;
 }
 
-ostream & operator <<(ostream &o, const Circle &c) {
+ostream& operator << (ostream& o, const Circle& c) {
     o << "The circle is centered at: " << c.x << " " << c.y << " "  << c.z << " " << "with radius " << c.radius << " " << "and area " << c.area << endl;
     return o;
 }

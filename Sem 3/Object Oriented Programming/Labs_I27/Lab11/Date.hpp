@@ -19,7 +19,7 @@ class DatePackage {
         void printDate();
 
         // Overload operators for increment
-        DatePackage& operator++();         // Pre-increment by 1 day
-        DatePackage operator++(int);       // Post-increment by 1 day
-        DatePackage& operator+=(int days); // Increment by N days
+        DatePackage& operator ++ ();         // Pre-increment by 1 day
+        DatePackage operator ++ (int);       // Post-increment by 1 day
+        DatePackage& operator += (int days); // Increment by N days
 };
