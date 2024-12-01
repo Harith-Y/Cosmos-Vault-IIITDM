@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 struct rational {
   int numerator;
   int denominator;

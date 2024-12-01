@@ -1,8 +1,6 @@
-#include <stdio.h>
 #include "matrix.h"
 
-int main()
-{
+int main() {
 	struct matrix a, b, result;
 
 	printf("Enter number of rows and columns for the matrix A: ");
@@ -22,17 +20,12 @@ int main()
 			scanf(" %d", &b.data[i][j]);
 
 	int choice = 0;
-	while (printf("1. Addition\n2. Subtraction\n3. Multiplication\n4. Transpose\n5. Determinant\n6. Inverse\n7. Quit\nPlease Enter an Integer: ") && choice != 7 && scanf(" %d", &choice))
-	{
-
-		if (choice == 1)
-		{
-			if (a.rows == b.rows && a.cols == b.cols)
-			{
+	while (printf("1. Addition\n2. Subtraction\n3. Multiplication\n4. Transpose\n5. Determinant\n6. Inverse\n7. Quit\nPlease Enter an Integer: ") && choice != 7 && scanf(" %d", &choice)) {
+		if (choice == 1) {
+			if (a.rows == b.rows && a.cols == b.cols) {
 				result = matrixAdd(a, b);
 				printf("Result of addition:\n");
-				for (int i = 0; i < result.rows; i++)
-				{
+				for (int i = 0; i < result.rows; i++) {
 					for (int j = 0; j < result.cols; j++)
 						printf("%d ", result.data[i][j]);
 					printf("\n");
@@ -42,14 +35,11 @@ int main()
 				printf("Error! Matrices must have the same dimensions.\n");
 		}
 
-		else if (choice == 2)
-		{
-			if (a.rows == b.rows && a.cols == b.cols)
-			{
+		else if (choice == 2) {
+			if (a.rows == b.rows && a.cols == b.cols) {
 				result = matrixSubtract(a, b);
 				printf("Result of subtraction:\n");
-				for (int i = 0; i < result.rows; i++)
-				{
+				for (int i = 0; i < result.rows; i++) {
 					for (int j = 0; j < result.cols; j++)
 						printf("%d ", result.data[i][j]);
 					printf("\n");
@@ -59,14 +49,11 @@ int main()
 				printf("Error! Matrices must have the same dimensions.\n");
 		}
 
-		else if (choice == 3)
-		{
-			if (a.cols == b.rows)
-			{
+		else if (choice == 3) {
+			if (a.cols == b.rows) {
 				result = matrixMultiply(a, b);
 				printf("Result of multiplication:\n");
-				for (int i = 0; i < result.rows; i++)
-				{
+				for (int i = 0; i < result.rows; i++) {
 					for (int j = 0; j < result.cols; j++)
 						printf("%d ", result.data[i][j]);
 					printf("\n");
@@ -76,8 +63,7 @@ int main()
 				printf("Error! Number of columns in the matrix A must equal the number of rows in the matrix B.\n");
 		}
 
-		else if (choice == 4)
-		{
+		else if (choice == 4) {
 			printf("Choose Matrix for Transpose (1 or 2): ");
 			int matrixChoice;
 			scanf(" %d", &matrixChoice);
@@ -88,23 +74,20 @@ int main()
 			else if (matrixChoice == 2)
 				result = matrixTranspose(b);
 
-			else
-			{
+			else {
 				printf("Invalid choice. Please enter 1 or 2.\n");
 				continue;
 			}
 
 			printf("Result of transpose:\n");
-			for (int i = 0; i < result.rows; i++)
-			{
+			for (int i = 0; i < result.rows; i++) {
 				for (int j = 0; j < result.cols; j++)
 					printf("%d ", result.data[i][j]);
 				printf("\n");
 			}
 		}
 
-		else if (choice == 5)
-		{
+		else if (choice == 5) {
 			printf("Choose Matrix for Determinant (1 or 2): ");
 			int matrixChoice;
 			scanf(" %d", &matrixChoice);
@@ -116,8 +99,7 @@ int main()
 			else if (matrixChoice == 2)
 				determinant = matrixDeterminant(b);
 
-			else
-			{
+			else {
 				printf("Invalid choice. Please enter 1 or 2.\n");
 				continue;
 			}
@@ -125,8 +107,7 @@ int main()
 			printf("Determinant: %d\n", determinant);
 		}
 
-		else if (choice == 6)
-		{
+		else if (choice == 6) {
 			printf("Choose Matrix for Inverse (1 or 2): ");
 			int matrixChoice;
 			scanf(" %d", &matrixChoice);
@@ -137,17 +118,14 @@ int main()
 			else if (matrixChoice == 2)
 				result = matrixInverse(b);
 
-			else
-			{
+			else {
 				printf("Invalid choice. Please enter 1 or 2.\n");
 				continue;
 			}
 
-			if (result.rows != 0 && result.cols != 0)
-			{
+			if (result.rows != 0 && result.cols != 0) {
 				printf("Result of inverse:\n");
-				for (int i = 0; i < result.rows; i++)
-				{
+				for (int i = 0; i < result.rows; i++) {
 					for (int j = 0; j < result.cols; j++)
 						printf("%d ", result.data[i][j]);
 					printf("\n");

@@ -1,12 +1,9 @@
-#include <stdio.h>
 #include "matrix.h"
 
-struct matrix matrixAdd(struct matrix a, struct matrix b)
-{
+struct matrix matrixAdd(struct matrix a, struct matrix b) {
     struct matrix result;
 
-    if ((a.rows != b.rows) || (a.cols != b.cols))
-    {
+    if ((a.rows != b.rows) || (a.cols != b.cols)) {
         printf("Error! Given Matrices must have the same dimensions.\n");
         result.rows = 0;
         result.cols = 0;

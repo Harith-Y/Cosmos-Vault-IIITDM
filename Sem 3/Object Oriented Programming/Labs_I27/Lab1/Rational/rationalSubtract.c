@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "rational.h"
 
 struct rational rationalSubtract(struct rational a, struct rational b){

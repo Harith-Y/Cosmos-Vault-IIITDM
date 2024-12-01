@@ -19,7 +19,7 @@ class Rational {
 
 /*
 
-Taking two Rational numbers as input of the format a+ib . 
+Taking two Rational numbers as input of the format a/b . 
 i) Add 
 ii) Subtract 
 iii) Power

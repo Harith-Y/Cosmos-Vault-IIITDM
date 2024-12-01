@@ -1,8 +1,6 @@
-#include <stdio.h>
 #include "matrix.h"
 
-struct matrix matrixTranspose(struct matrix a)
-{
+struct matrix matrixTranspose(struct matrix a) {
     struct matrix result;
 
     result.rows = a.cols;

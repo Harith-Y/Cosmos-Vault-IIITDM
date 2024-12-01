@@ -2,8 +2,9 @@
 
 #define MAX_SIZE 10
 
-struct matrix
-{
+#include <stdio.h>
+
+struct matrix {
   int rows;
   int cols;
   int data[MAX_SIZE][MAX_SIZE];
