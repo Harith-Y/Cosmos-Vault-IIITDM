@@ -1,0 +1,2 @@
+1) Test Drive the code doscussed in the class for inheritance
+2) Simulate Shape package that has Point, Circle(derived from point), Cylinder(derived from circle) classes. Overload the input and output operators and support with functions area,volume

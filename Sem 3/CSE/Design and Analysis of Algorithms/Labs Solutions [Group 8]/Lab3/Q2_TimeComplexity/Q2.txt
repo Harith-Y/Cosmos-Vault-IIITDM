@@ -1,0 +1,11 @@
+Time Complexities of Mystery Functions
+--------------------------------------
+
+1. O(n)
+2. O(n)
+3. O(n^2)
+4. O(n^2)
+5. O(n^4)
+6. O(2^n)
+
+

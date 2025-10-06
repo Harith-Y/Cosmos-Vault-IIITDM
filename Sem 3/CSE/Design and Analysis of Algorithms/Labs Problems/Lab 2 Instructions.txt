@@ -1,0 +1,15 @@
+ Sort a given set of elements using the Quick sort method and determine the time required to sort the elements. Propose three different logics for choosing the pivot element. Use
+system time function and compare system time for each logic. Test
+drive on at least 20 different inputs (i.e., different values of n) and plot the graph. The elements can be read from a file or can be generated using the random number generator.
+
+
+2.  An integer array A[1..n] contains all integers from 0 to n except one. Write an algorithm to identify the missing integer. Propose three different logics and identify the best one among them by comparing according to the system time.
+
+3. Given a ternary array (filled with 0,1,2) of size 'n'. Arrange
+them in non-decreasing order. Propose three different logics and identify the best one among them by comparing according to the system time.
+
+Students have to write the pseudo code first in their notebooks and implement it after that.
+
+A group has to submit 9 programs by the end of the lab.
+
+Note: Students should focus on optimality in time while proposing the logics
