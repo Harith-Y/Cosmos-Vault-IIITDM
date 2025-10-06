@@ -1,0 +1,43 @@
+$date
+	Thu Mar  6 10:52:57 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_mux4to1 $end
+$var wire 2 ! output_y_wire [1:0] $end
+$var reg 8 " data_in_reg [7:0] $end
+$var reg 2 # select_reg [1:0] $end
+$scope module uut $end
+$var wire 8 $ data_in [7:0] $end
+$var wire 2 % select [1:0] $end
+$var reg 2 & output_y [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11 &
+b0 %
+b10100011 $
+b0 #
+b10100011 "
+b11 !
+$end
+#10
+b0 !
+b0 &
+b1 #
+b1 %
+#20
+b10 !
+b10 &
+b10 #
+b10 %
+#30
+b11 #
+b11 %
+#40
